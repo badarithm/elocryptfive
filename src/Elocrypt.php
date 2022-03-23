@@ -2,7 +2,7 @@
 /**
  * Trait Elocrypt.
  */
-namespace Delatbabel\Elocrypt;
+namespace Badarithm\Elocrypt;
 
 use Illuminate\Contracts\Encryption\DecryptException;
 use Illuminate\Contracts\Encryption\EncryptException;

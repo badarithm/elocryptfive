@@ -1,6 +1,6 @@
 <?php
 
-namespace Delatbabel\Elocrypt;
+namespace Badarithm\Elocrypt;
 
 use Illuminate\Support\ServiceProvider;
 
