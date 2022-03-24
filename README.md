@@ -1,11 +1,11 @@
-# Eloquent Encryption/Decryption for Laravel 5
+# Eloquent Encryption/Decryption for Laravel 8 & 9
 
-[![Build Status](https://travis-ci.org/delatbabel/elocryptfive.png?branch=master)](https://travis-ci.org/delatbabel/elocryptfive)
-[![StyleCI](https://styleci.io/repos/42222272/shield)](https://styleci.io/repos/42222272)
-[![Latest Stable Version](https://poser.pugx.org/delatbabel/elocryptfive/version.png)](https://packagist.org/packages/ddpro/elocryptfive)
-[![Total Downloads](https://poser.pugx.org/delatbabel/elocryptfive/d/total.png)](https://packagist.org/packages/delatbabel/elocryptfive)
+[![Build Status](https://travis-ci.org/badarithm/elocryptfive.png?branch=master)](https://travis-ci.org/delatbabel/elocryptfive)
 
-Automatically encrypt and decrypt Laravel 5 Eloquent values.
+[//]: # ([![StyleCI]&#40;https://styleci.io/repos/42222272/shield&#41;]&#40;https://styleci.io/repos/42222272&#41;)
+[![Latest Stable Version](http://poser.pugx.org/badarithm/elocryptfive/v)](https://packagist.org/packages/badarithm/elocryptfive) [![Total Downloads](http://poser.pugx.org/badarithm/elocryptfive/downloads)](https://packagist.org/packages/badarithm/elocryptfive) [![Latest Unstable Version](http://poser.pugx.org/badarithm/elocryptfive/v/unstable)](https://packagist.org/packages/badarithm/elocryptfive) [![License](http://poser.pugx.org/badarithm/elocryptfive/license)](https://packagist.org/packages/badarithm/elocryptfive) [![PHP Version Require](http://poser.pugx.org/badarithm/elocryptfive/require/php)](https://packagist.org/packages/badarithm/elocryptfive)
+
+Automatically encrypt and decrypt Laravel 8 | 9 Eloquent values.
 
 ## READ THIS FIRST
 
@@ -32,29 +32,16 @@ not but will be automatically encrypted when it is saved back into those columns
 
 ## Requirements and Recommendations
 
-* Laravel 5.1 LTS (untested on 5.2 and later versions)
-* PHP > 5.6.0 (need the `hash_equals()` function which was added in PHP 5.6)
+* Laravel 8 | 9
+* PHP > 7.4 (need the `hash_equals()` function which was added in PHP 5.6)
 * PHP [openssl extension](http://php.net/manual/en/book.openssl.php).
 * A working OpenSSL implementation on your OS.  OpenSSL comes pre-built with most Linux distributions and other forms of Unix such as *BSD.  There may or may not be a working OpenSSL implementation on a Windows system depending on how your LA?P stack was built.  I cannot offer support for installing or using ElocryptFive on systems that do not have an OpenSSL library.
 
 ## Contributors
 
-This is Darren Taylor's Laravel 4 "elocrypt" package, ported to Laravel 5.  I have made the
-following additions/changes:
+This is Darren delatbabel's Laravel 5.* "elocrypt" package, ported to Laravel 8 / 9. No real additional changes were made, apart from version bumps.
 
-* Do the encryption in separate functions (encryptedAttribute and decryptedAttribute rather than
-  inside __set and  __get, and call those from setAttribute and getAttribute as that's more
-  appropriate for Laravel 5 with the new casts features.  So, for example,
-  you can add a field to `$casts` and also to `$encrypts` so that an array can be cast to a JSON
-  string first, and then encrypted.  It should also work for Lumen.
-
-* Prefix all encrypted values with a tag string (default `__ELOCRYPT__:` ) so that plain text
-  data can be detected and handled correctly.  The task of writing a script to traverse your
-  existing database and update all plain text data to encrypted data is left to the reader.
-
-The original Laravel 4 package is here: https://github.com/dtisgodsson/elocrypt
-
-Thanks to Brandon Surowiec for some extensive refactoring of the internal methods.
+The original Laravel 5.* package is here: https://github.com/delatbabel/elocryptfive
 
 ## Installation
 
@@ -62,7 +49,7 @@ This package can be installed via Composer by adding the following to your `comp
 
 ```
     "require": {
-        "delatbabel/elocryptfive": "~1.0"
+        "delatbabel/elocryptfive": "^2.0"
     }
 ```
 

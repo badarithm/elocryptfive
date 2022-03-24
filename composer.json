@@ -1,7 +1,9 @@
 {
     "name": "badarithm/elocryptfive",
     "description": "Automatically encrypt and decrypt Eloquent attributes with ease.",
-    "keywords": ["encrypt", "elocrypt", "eloquent", "l5", "l8", "l9", "laravel", "laravel5", "encryption", "eloquent encryption", "laravel5 encryption", "laravel5 aes", "eloquent aes"],
+    "keywords": ["encrypt", "elocrypt", "eloquent", "l8", "l9", "laravel", "laravel8", "laravel9", "encryption",
+        "eloquent encryption", "laravel8 encryption", "laravel8 aes", "eloquent aes", "laravel9 encryption",
+        "laravel9 aes", "database encryption"],
     "license": "MIT",
     "authors": [
         {
@@ -24,7 +26,7 @@
         "paragonie/random_compat": "^1.1|^2.0|^9.99"
     },
     "require-dev": {
-        "phpunit/phpunit": "~4.0"
+        "phpunit/phpunit": "~9.0"
     },
     "autoload": {
         "psr-4": {
