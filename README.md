@@ -5,7 +5,7 @@
 [//]: # ([![StyleCI]&#40;https://styleci.io/repos/42222272/shield&#41;]&#40;https://styleci.io/repos/42222272&#41;)
 [![Latest Stable Version](http://poser.pugx.org/badarithm/elocryptfive/v)](https://packagist.org/packages/badarithm/elocryptfive) [![Total Downloads](http://poser.pugx.org/badarithm/elocryptfive/downloads)](https://packagist.org/packages/badarithm/elocryptfive) [![Latest Unstable Version](http://poser.pugx.org/badarithm/elocryptfive/v/unstable)](https://packagist.org/packages/badarithm/elocryptfive) [![License](http://poser.pugx.org/badarithm/elocryptfive/license)](https://packagist.org/packages/badarithm/elocryptfive) [![PHP Version Require](http://poser.pugx.org/badarithm/elocryptfive/require/php)](https://packagist.org/packages/badarithm/elocryptfive)
 
-Automatically encrypt and decrypt Laravel 8 | 9 Eloquent values.
+Automatically encrypt and decrypt Laravel 8 | 9 Eloquent values. This is a fork of [delatbabel/elocryptfive](https://github.com/delatbabel/elocryptfive) package.
 
 ## READ THIS FIRST
 
